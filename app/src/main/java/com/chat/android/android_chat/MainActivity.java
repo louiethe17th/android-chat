@@ -20,8 +20,8 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity implements RoomListener {
 
     // replace this with a real channelID from Scaledrone dashboard
-    private String channelID = "CHANNEL_ID_FROM_YOUR_SCALEDRONE_DASHBOARD";
-    private String roomName = "observable-room";
+    private String channelID = "YvHfSmMoC3ykOeAC";
+    private String roomName = "android_chat";
     private EditText editText;
     private Scaledrone scaledrone;
     private MessageAdapter messageAdapter;
@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editText = (EditText) findViewById(R.id.editText);
+        editText = findViewById(R.id.editText);
 
         messageAdapter = new MessageAdapter(this);
-        messagesView = (ListView) findViewById(R.id.messages_view);
+        messagesView = findViewById(R.id.messages_view);
         messagesView.setAdapter(messageAdapter);
 
         MemberData data = new MemberData(getRandomName(), getRandomColor());
