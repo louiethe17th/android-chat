@@ -19,9 +19,8 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements RoomListener {
 
-    // replace this with a real channelID from Scaledrone dashboard
     private String channelID = "YvHfSmMoC3ykOeAC";
-    private String roomName = "android_chat";
+    private String roomName = "observable-room";
     private EditText editText;
     private Scaledrone scaledrone;
     private MessageAdapter messageAdapter;
